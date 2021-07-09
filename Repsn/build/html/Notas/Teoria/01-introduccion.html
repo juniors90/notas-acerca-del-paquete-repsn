@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Introducción &mdash; documentación de Notas acerca del paquete Repsn - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="1. Introducción" href="../01-introduccion.html" />
+    <link rel="prev" title="Notas acerca del paquete Repsn" href="../../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Notas acerca del paquete Repsn
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Fundamentos Teóricos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definicion">1.1. Definición</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01-introduccion.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-representaciones-irreducibles.html">2. Representaciones Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-representaciones-reducibles.html">3. Representaciones Reducibles</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Notas acerca del paquete Repsn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Introducción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Notas/Teoria/01-introduccion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1><span class="section-number">1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>La idea es revisar algunos conceptos de la Teoría de Grupos y de Teoria de Representaciones, que son necesarios para entender el código de este paquete. La mayoría de estos contenidos estám fundamentados en la tesis del autor del Paquete.</p>
+<p>De aquí en más, todos los grupos considerados son finitos.</p>
+<p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo finito y sea <span class="math notranslate nohighlight">\(V\)</span> un espacio vectorial de dimensión <span class="math notranslate nohighlight">\(n\)</span> sobre <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(GL(V)\)</span> denota el grupo de todas las trasformaciones lineales invertibles de <span class="math notranslate nohighlight">\(V\)</span> en <span class="math notranslate nohighlight">\(V\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(G\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(GL(V)\)</span>, entonces un subespacio <span class="math notranslate nohighlight">\(W\)</span> de <span class="math notranslate nohighlight">\(V\)</span> es un subespacio <em>invariante</em> para <span class="math notranslate nohighlight">\(G\)</span> si <span class="math notranslate nohighlight">\(Wx=W\)</span> para todo <span class="math notranslate nohighlight">\(x\in G\)</span>. Decimos que <span class="math notranslate nohighlight">\(G\)</span> es <em>irreducible</em> si sus unicos subespacios invariantes son <span class="math notranslate nohighlight">\(V\)</span> y <span class="math notranslate nohighlight">\(\{0\}\)</span>.</p></li>
+<li><p>Dada una base de <span class="math notranslate nohighlight">\(V\)</span> cada transformación lineal <span class="math notranslate nohighlight">\(V\to V\)</span> se correónde univocamente con una matriz <span class="math notranslate nohighlight">\(n\times n\)</span> con entradas en <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. Esta correspondencia define un isomorfismo de <span class="math notranslate nohighlight">\(GL(V)\)</span> sobre el grupo <span class="math notranslate nohighlight">\(GL(n, \mathbb{C})\)</span> de todas las matrices no singulares <span class="math notranslate nohighlight">\(n\times n\)</span> con entradas en <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(G\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(GL(n, \mathbb{C})\)</span> entonces <span class="math notranslate nohighlight">\(G\)</span> es <em>irreducible</em> su correspondiente subgrupo isomorfo en <span class="math notranslate nohighlight">\(GL(V)\)</span> es <em>irreducible</em>.</p></li>
+</ul>
+<div class="section" id="definicion">
+<h2><span class="section-number">1.1. </span>Definición<a class="headerlink" href="#definicion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una representación lineal de <span class="math notranslate nohighlight">\(G\)</span> es un par <span class="math notranslate nohighlight">\((V, \rho)\)</span> tal que <span class="math notranslate nohighlight">\(V\)</span> un espacio vectorial sobre <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> y <span class="math notranslate nohighlight">\(\rho : G \to GL(V)\)</span> es un homomorfismo de grupos.</p>
+<p>De manera similar, una representación matricial de <span class="math notranslate nohighlight">\(G\)</span> en el espacio vectorial <span class="math notranslate nohighlight">\(V\)</span> es un morfismo <span class="math notranslate nohighlight">\(\rho : G\to GL(n, \mathbb{C})\)</span> donde <span class="math notranslate nohighlight">\(n\)</span> es la dimensión de <span class="math notranslate nohighlight">\(V\)</span> como <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>-espacio vectorial. <span class="math notranslate nohighlight">\(dim_{\mathbb{C}}(V)=n\)</span> es el grado de <span class="math notranslate nohighlight">\(\rho\)</span>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../01-introduccion.html" class="btn btn-neutral float-right" title="1. Introducción" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../index.html" class="btn btn-neutral float-left" title="Notas acerca del paquete Repsn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

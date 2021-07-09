@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Introducción &mdash; documentación de Notas acerca del paquete Repsn - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2. Representaciones Irreducibles" href="02-representaciones-irreducibles.html" />
+    <link rel="prev" title="Notas acerca del paquete Repsn" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Notas acerca del paquete Repsn
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#para-que-sirve-el-paquete-repsn">1.1. ¿Para que sirve el paquete Repsn?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cuales-son-sus-principales-funciones">1.2. ¿Cúales son sus principales funciones?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acerca-de-su-implementacion">1.3. Acerca de su implementación</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-representaciones-irreducibles.html">2. Representaciones Irreducibles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-representaciones-reducibles.html">3. Representaciones Reducibles</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Notas acerca del paquete Repsn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Introducción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/01-introduccion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1><span class="section-number">1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="para-que-sirve-el-paquete-repsn">
+<h2><span class="section-number">1.1. </span>¿Para que sirve el paquete Repsn?<a class="headerlink" href="#para-que-sirve-el-paquete-repsn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">Repsn</span></code> sirve para <strong>calcular representaciones matriciales en característica cero de grupos finitos</strong>.</p>
+</div>
+<div class="section" id="cuales-son-sus-principales-funciones">
+<h2><span class="section-number">1.2. </span>¿Cúales son sus principales funciones?<a class="headerlink" href="#cuales-son-sus-principales-funciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La mayoría de las funciones en <code class="docutils literal notranslate"><span class="pre">Repsn</span></code> se han escrito de acuerdo con el algoritmo descrito en la tesis doctoral del autor [DA03] y [DD10] (ver [DA05]).</p>
+<p>La lista de funciones son:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AlphaRepsn</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LinearConstituentWithMultiplicityOne</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#ischaractersubgroup"><span class="std std-ref">IsCharacterSubgroup</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CharacterSubgroupLinearConstituent</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MatrixRepsn</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CharacterSylowSubgroup</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RepresentationMatrixGenerators</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CharacterSubgroup</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#charactersubgrouprepresentation"><span class="std std-ref">CharacterSubgroupRepresentation (para un caracter)</span></a></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#inducedsubgrouprepresentation"><span class="std std-ref">InducedSubgroupRepresentation</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ModuleBasis</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#extendedrepresentation"><span class="std std-ref">ExtendedRepresentation</span></a></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#extendedrepresentationnormal"><span class="std std-ref">ExtendedRepresentationNormal</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AddToSubgpList</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MinimalNormalSubgps</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ReducedSubgroupCharacter</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#equivalentrepresentation"><span class="std std-ref">EquivalentRepresentation</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PSubgroups</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">StandardSubgroups</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#allcharacterstandardsubgroups"><span class="std std-ref">AllCharacterStandardSubgroups</span></a></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#allcharacterpsubgroups"><span class="std std-ref">AllCharacterPSubgroups</span></a></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#allcharactersubgroups"><span class="std std-ref">AllCharacterSubgroups</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CoversOfAlternatingGroupsRepresentation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CoversOfU43Representation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CoversOfO73Representation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CoversOfU62Representation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PerfectAbelianSocleRepresentation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PerfectRepresentation</span></code></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#irreducibleaffordingrepresentation"><span class="std std-ref">IrreducibleAffordingRepresentation</span></a></p></li>
+<li><p><a class="reference internal" href="02-representaciones-irreducibles.html#isaffordingrepresentation"><span class="std std-ref">IsAffordingRepresentation</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DiagonalBlockMatrix</span></code></p></li>
+<li><p><a class="reference internal" href="03-representaciones-reducibles.html#constituentsofrepresentation"><span class="std std-ref">ConstituentsOfRepresentation</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EquivalentBlockRepresentation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IsReducibleRepresentation</span></code></p></li>
+</ul>
+<p>Nueva en <code class="docutils literal notranslate"><span class="pre">REPSN</span> <span class="pre">3.0.1</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ProjectiveReps</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GeneratorsProjective</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FilteringCharacters</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IrrRepsNotPrime</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GallagherRepsn</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SocleMoreComponents</span></code></p></li>
+<li><p>Para construir representaciones de grupos simples y sus cubrimientos usamos el algoritmo descrito en [Dix93].</p></li>
+<li><p>Para utilizar este algoritmo para construir una representación de un grupo <span class="math notranslate nohighlight">\(G\)</span> que proporcione un carácter irreducible <span class="math notranslate nohighlight">\(\chi\)</span> de <span class="math notranslate nohighlight">\(G\)</span>, necesitamos tener un subgrupo <span class="math notranslate nohighlight">\(H\)</span> de <span class="math notranslate nohighlight">\(G\)</span> tal que la restricción de <span class="math notranslate nohighlight">\(\chi\)</span> a <span class="math notranslate nohighlight">\(H\)</span> tenga un constituyente lineal con multiplicidad uno. En este caso decimos que <span class="math notranslate nohighlight">\(H\)</span> es un subgrupo de caracteres relativo a <span class="math notranslate nohighlight">\(\chi\)</span> (o un subgrupo <span class="math notranslate nohighlight">\(\chi\)</span>). Un <span class="math notranslate nohighlight">\(\chi\)</span>-subgrupo para cada carácter irreducible <span class="math notranslate nohighlight">\(\chi\)</span> de grado menor que <span class="math notranslate nohighlight">\(100\)</span> de grupos simples y sus cubiertas se enumeran en [DA06] y [DA07].</p></li>
+</ul>
+<p>Todas las funciones de <code class="docutils literal notranslate"><span class="pre">Repsn</span></code> están escritas completamente en el lenguaje <strong>GAP</strong>. Se demuestra en [DA05] y [DD10] que el algoritmo es correcto para cualquier grupo con un carácter de grado menor que <span class="math notranslate nohighlight">\(100\)</span>. De hecho, si el grupo tiene solución, no hay restricción en el grado del carácter. En la práctica el programa es bastante rápido cuando la titulación es pequeña, pero puede ser muy lento cuando es necesario llamar a alguno de los subprogramas que extienden representaciones irreductibles. En el último caso, el número de operaciones de elementos necesarios para ampliar una representación de grado <span class="math notranslate nohighlight">\(d\)</span> es proporcional a <span class="math notranslate nohighlight">\(d^{6}\)</span>.</p>
+</div>
+<div class="section" id="acerca-de-su-implementacion">
+<h2><span class="section-number">1.3. </span>Acerca de su implementación<a class="headerlink" href="#acerca-de-su-implementacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Repsn</span></code> se implementa en el lenguaje <strong>GAP</strong> y se ejecuta en cualquier sistema que admita <strong>GAP 4</strong>. El paquete <code class="docutils literal notranslate"><span class="pre">Repsn</span></code> se carga en la sesión actual de <strong>GAP</strong> con el comando</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gap</span><span class="o">&gt;</span> <span class="n">LoadPackage</span><span class="p">(</span> <span class="s2">&quot;repsn&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="n">false</span> <span class="p">);</span>
+</pre></div>
+</div>
+<p>tal como se indica en la Sección «Loading a GAP Package» en el Manual de Referencia de <strong>GAP</strong>.</p>
+<p>Para informar cualquier error u otro problema que se pueda encontrar a través del rastreador de problemas de <code class="docutils literal notranslate"><span class="pre">Repsn</span></code>, podemos hacerlo <a class="reference external" href="https://github.com/gap-packages/repsn/issues">aquí</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="02-representaciones-irreducibles.html" class="btn btn-neutral float-right" title="2. Representaciones Irreducibles" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Notas acerca del paquete Repsn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

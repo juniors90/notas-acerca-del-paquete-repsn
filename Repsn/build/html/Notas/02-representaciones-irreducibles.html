@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. Representaciones Irreducibles &mdash; documentación de Notas acerca del paquete Repsn - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="1. Introducción" href="01-introduccion.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Notas acerca del paquete Repsn
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-introduccion.html">1. Introducción</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Representaciones Irreducibles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#construir-representaciones">2.1. Construir representaciones</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irreducibleaffordingrepresentation">2.1.1. IrreducibleAffordingRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isaffordingrepresentation">2.1.2. IsAffordingRepresentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#induccion">2.2. Inducción</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inducedsubgrouprepresentation">2.2.1. InducedSubgroupRepresentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#extension">2.3. Extensión</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extendedrepresentation">2.3.1. ExtendedRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extendedrepresentationnormal">2.3.2. ExtendedRepresentationNormal</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#subgrupos-caracter">2.4. Subgrupos Caracter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#charactersubgrouprepresentation-para-un-caracter">2.4.1. CharacterSubgroupRepresentation (para un caracter)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ischaractersubgroup">2.4.2. IsCharacterSubgroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#allcharacterpsubgroups">2.4.3. AllCharacterPSubgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#allcharacterstandardsubgroups">2.4.4. AllCharacterStandardSubgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#allcharactersubgroups">2.4.5. AllCharacterSubgroups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#equivalent-representation">2.5. Equivalent Representation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#equivalentrepresentation">2.5.1. EquivalentRepresentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Notas acerca del paquete Repsn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>Representaciones Irreducibles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/02-representaciones-irreducibles.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="representaciones-irreducibles">
+<h1><span class="section-number">2. </span>Representaciones Irreducibles<a class="headerlink" href="#representaciones-irreducibles" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Sea <span class="math notranslate nohighlight">\(G\)</span> un grupo finito y <span class="math notranslate nohighlight">\(\chi\)</span> un carácter ordinario irreductible de <span class="math notranslate nohighlight">\(G\)</span>. En este capítulo presentamos algunas funciones para construir una representación compleja <span class="math notranslate nohighlight">\(R\)</span> de <span class="math notranslate nohighlight">\(G\)</span> que da <span class="math notranslate nohighlight">\(\chi\)</span>. Procedemos de forma recursiva, reduciendo el problema a subgrupos más pequeños de <span class="math notranslate nohighlight">\(G\)</span> o caracteres de menor grado hasta que obtenemos un problema que podemos abordar directamente. Las entradas de la mayoría de las funciones son un grupo <span class="math notranslate nohighlight">\(G\)</span> dado y un carácter irreducible <span class="math notranslate nohighlight">\(\chi\)</span>. La salida es un mapeo (representación) que asigna a cada generador <span class="math notranslate nohighlight">\(x\)</span> de <span class="math notranslate nohighlight">\(G\)</span> una matriz <span class="math notranslate nohighlight">\(R(x)\)</span>. Podemos usar estas funciones para todos los grupos y todos los caracteres irreducibles <span class="math notranslate nohighlight">\(\chi\)</span> de grado menor que <span class="math notranslate nohighlight">\(100\)</span> aunque en principio los mismos métodos pueden extenderse a caracteres de mayor grado.</p>
+<p>Los principales métodos de estas funciones que se utilizan para construir representaciones de grupos finitos son Inducción, Extensión, Producto Tensorial y el método de Dixon (para construir representaciones de grupos simples y sus cubiertas) [DA05] y el método de Representación Proyectiva [DD10].</p>
+<div class="section" id="construir-representaciones">
+<h2><span class="section-number">2.1. </span>Construir representaciones<a class="headerlink" href="#construir-representaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección presenta la función principal para calcular una representación de un grupo finito <span class="math notranslate nohighlight">\(G\)</span> que proporciona un carácter irreducible <span class="math notranslate nohighlight">\(\chi\)</span> de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<div class="section" id="irreducibleaffordingrepresentation">
+<span id="id1"></span><h3><span class="section-number">2.1.1. </span>IrreducibleAffordingRepresentation<a class="headerlink" href="#irreducibleaffordingrepresentation" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">IrreducibleAffordingRepresentation(</span> <span class="pre">chi</span> <span class="pre">)</span></code> llamada con un carácter irreducible <code class="docutils literal notranslate"><span class="pre">chi</span></code> de un grupo <span class="math notranslate nohighlight">\(G\)</span>, esta función devuelve un mapeo (representación) que mapea cada generador de <span class="math notranslate nohighlight">\(G\)</span> a una matriz <span class="math notranslate nohighlight">\(d \ast d\)</span>, donde <span class="math notranslate nohighlight">\(d\)</span> es el grado de <code class="docutils literal notranslate"><span class="pre">chi</span></code>. El grupo generado por estas matrices (la imagen del mapa) es un grupo de matrices que es isomorfo a <span class="math notranslate nohighlight">\(G\)</span> módulo el núcleo del mapa. Si <span class="math notranslate nohighlight">\(G\)</span> es un grupo solucionable, entonces no hay restricción en el grado de <code class="docutils literal notranslate"><span class="pre">chi</span></code>. En el caso de que <span class="math notranslate nohighlight">\(G\)</span> no se pueda resolver y el carácter <code class="docutils literal notranslate"><span class="pre">chi</span></code> tenga un grado mayor que <span class="math notranslate nohighlight">\(100\)</span>, la salida tal vez no sea correcta. En este caso, a veces el mapeo de salida no ofrece el carácter dado o no devuelve ningún mapeo.</p>
+</div>
+<div class="section" id="isaffordingrepresentation">
+<span id="id2"></span><h3><span class="section-number">2.1.2. </span>IsAffordingRepresentation<a class="headerlink" href="#isaffordingrepresentation" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">IsAffordingRepresentation(</span> <span class="pre">chi,</span> <span class="pre">rep</span> <span class="pre">)</span></code>. Si <code class="docutils literal notranslate"><span class="pre">chi</span></code> y <code class="docutils literal notranslate"><span class="pre">rep</span></code> son un carácter y una representación de un grupo <span class="math notranslate nohighlight">\(G\)</span>, respectivamente, <a class="reference internal" href="#isaffordingrepresentation">IsAffordingRepresentation</a> devuelve <code class="docutils literal notranslate"><span class="pre">true</span></code> si la traza de <code class="docutils literal notranslate"><span class="pre">rep(x)</span></code> es igual a <code class="docutils literal notranslate"><span class="pre">chi(x)</span></code> para todos los elementos <span class="math notranslate nohighlight">\(x\)</span> en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p>Podemos obtener el tamaño de la imagen de esta representación por <code class="docutils literal notranslate"><span class="pre">Size(</span> <span class="pre">Image(</span> <span class="pre">rep</span> <span class="pre">)</span> <span class="pre">)</span></code> y calcular el valor de un elemento arbitrario <span class="math notranslate nohighlight">\(x\)</span> en <span class="math notranslate nohighlight">\(G\)</span> por <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">^</span> <span class="pre">rep</span></code>.</p>
+</div>
+</div>
+<div class="section" id="induccion">
+<h2><span class="section-number">2.2. </span>Inducción<a class="headerlink" href="#induccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="inducedsubgrouprepresentation">
+<span id="id3"></span><h3><span class="section-number">2.2.1. </span>InducedSubgroupRepresentation<a class="headerlink" href="#inducedsubgrouprepresentation" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">InducedSubgroupRepresentation(</span> <span class="pre">G,</span> <span class="pre">rep</span> <span class="pre">)</span></code> calcula una representación de <span class="math notranslate nohighlight">\(G\)</span> inducida a partir de la representación <code class="docutils literal notranslate"><span class="pre">rep</span></code> de un subgrupo <span class="math notranslate nohighlight">\(H\)</span> de <span class="math notranslate nohighlight">\(G\)</span>. Si <code class="docutils literal notranslate"><span class="pre">rep</span></code> tiene un grado <span class="math notranslate nohighlight">\(d\)</span>, entonces el grado de la representación de salida es <span class="math notranslate nohighlight">\(d \ast | G: H |\)</span>.</p>
+</div>
+</div>
+<div class="section" id="extension">
+<h2><span class="section-number">2.3. </span>Extensión<a class="headerlink" href="#extension" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En esta sección presentamos algunas funciones para extender una representación de un subgrupo a todo el grupo.</p>
+<div class="section" id="extendedrepresentation">
+<span id="id4"></span><h3><span class="section-number">2.3.1. </span>ExtendedRepresentation<a class="headerlink" href="#extendedrepresentation" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">ExtendedRepresentation(</span> <span class="pre">chi,</span> <span class="pre">rep</span> <span class="pre">)</span></code> actúa de la siguiente manera: supongamos que <span class="math notranslate nohighlight">\(H\)</span> es un subgrupo de un grupo <span class="math notranslate nohighlight">\(G\)</span> y <code class="docutils literal notranslate"><span class="pre">chi</span></code> es un carácter irreducible de <span class="math notranslate nohighlight">\(G\)</span>, de modo que la restricción de <code class="docutils literal notranslate"><span class="pre">chi</span></code> a <span class="math notranslate nohighlight">\(H\)</span>, digamos <code class="docutils literal notranslate"><span class="pre">phi</span></code>, es irreducible. Si rep:math:<cite>H</cite> es una representación irreductible de <span class="math notranslate nohighlight">\(H\)</span> que proporciona <code class="docutils literal notranslate"><span class="pre">phi</span></code>, entonces <a class="reference internal" href="#extendedrepresentation">ExtendedRepresentation</a> extiende la representación <code class="docutils literal notranslate"><span class="pre">rep</span></code> de <span class="math notranslate nohighlight">\(H\)</span> a una representación de <span class="math notranslate nohighlight">\(G\)</span> que proporciona <code class="docutils literal notranslate"><span class="pre">chi</span></code>. Esta llamada a la función puede resultar bastante cara cuando el representante de representación tiene un alto grado.</p>
+</div>
+<div class="section" id="extendedrepresentationnormal">
+<span id="id5"></span><h3><span class="section-number">2.3.2. </span>ExtendedRepresentationNormal<a class="headerlink" href="#extendedrepresentationnormal" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>.La función <code class="docutils literal notranslate"><span class="pre">ExtendedRepresentationNormal(chi,</span> <span class="pre">rep)</span></code> actúa de la siguiente manera: supongamos que <span class="math notranslate nohighlight">\(H\)</span> es un subgrupo normal de un grupo <span class="math notranslate nohighlight">\(G\)</span> y <code class="docutils literal notranslate"><span class="pre">chi</span></code> es un carácter irreducible de <span class="math notranslate nohighlight">\(G\)</span>, de modo que la restricción de <code class="docutils literal notranslate"><span class="pre">chi</span></code> a <span class="math notranslate nohighlight">\(H\)</span>, digamos <code class="docutils literal notranslate"><span class="pre">phi</span></code>, es irreducible. Si <code class="docutils literal notranslate"><span class="pre">rep</span></code> es una representación irreducible de <span class="math notranslate nohighlight">\(H\)</span> que proporciona <code class="docutils literal notranslate"><span class="pre">phi</span></code>, <a class="reference internal" href="#extendedrepresentationnormal">ExtendedRepresentationNormal</a> extiende la representación <code class="docutils literal notranslate"><span class="pre">rep</span></code> de <span class="math notranslate nohighlight">\(H\)</span> a una representación de <span class="math notranslate nohighlight">\(G\)</span> que proporciona <code class="docutils literal notranslate"><span class="pre">chi</span></code>. Esta función es más eficaz que <a class="reference internal" href="#extendedrepresentation">ExtendedRepresentation</a>.</p>
+</div>
+</div>
+<div class="section" id="subgrupos-caracter">
+<h2><span class="section-number">2.4. </span>Subgrupos Caracter<a class="headerlink" href="#subgrupos-caracter" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si <span class="math notranslate nohighlight">\(\chi\)</span> es un carácter irreducible de un grupo <span class="math notranslate nohighlight">\(G\)</span> y <span class="math notranslate nohighlight">\(H\)</span> es un subgrupo de <span class="math notranslate nohighlight">\(G\)</span> tal que la restricción de <span class="math notranslate nohighlight">\(\chi\)</span> a <span class="math notranslate nohighlight">\(H\)</span> tiene un constituyente lineal con multiplicidad uno, entonces llamamos a <span class="math notranslate nohighlight">\(H\)</span> un subgrupo de caracteres relativo a <span class="math notranslate nohighlight">\(\chi\)</span> o un <span class="math notranslate nohighlight">\(\chi\)</span>-subgrupo.</p>
+<div class="section" id="charactersubgrouprepresentation-para-un-caracter">
+<span id="charactersubgrouprepresentation"></span><h3><span class="section-number">2.4.1. </span>CharacterSubgroupRepresentation (para un caracter)<a class="headerlink" href="#charactersubgrouprepresentation-para-un-caracter" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">CharacterSubgroupRepresentation(</span> <span class="pre">chi</span> <span class="pre">)</span></code> o <code class="docutils literal notranslate"><span class="pre">CharacterSubgroupRepresentation(</span> <span class="pre">chi,</span> <span class="pre">H</span> <span class="pre">)</span></code> devuelve una representación que proporciona <code class="docutils literal notranslate"><span class="pre">chi</span></code> al encontrar un subgrupo de <code class="docutils literal notranslate"><span class="pre">chi</span></code> y utilizar el método descrito en [Dix93]. Si el segundo argumento es un <code class="docutils literal notranslate"><span class="pre">chi</span></code>-subgrupo, entonces devuelve una representación que proporciona <code class="docutils literal notranslate"><span class="pre">chi</span></code> sin buscar un <code class="docutils literal notranslate"><span class="pre">chi</span></code>-subgrupo. En este caso, se indica un error si no existe ningún <code class="docutils literal notranslate"><span class="pre">chi</span></code>-subgrupo.</p>
+</div>
+<div class="section" id="ischaractersubgroup">
+<span id="id6"></span><h3><span class="section-number">2.4.2. </span>IsCharacterSubgroup<a class="headerlink" href="#ischaractersubgroup" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">IsCharacterSubgroup(</span> <span class="pre">chi,</span> <span class="pre">H</span> <span class="pre">)</span></code> devuelve <code class="docutils literal notranslate"><span class="pre">true</span></code> si <span class="math notranslate nohighlight">\(H\)</span> es un  <code class="docutils literal notranslate"><span class="pre">chi</span></code>-subgrupo y <code class="docutils literal notranslate"><span class="pre">false</span></code> en caso contrario.</p>
+</div>
+<div class="section" id="allcharacterpsubgroups">
+<span id="id7"></span><h3><span class="section-number">2.4.3. </span>AllCharacterPSubgroups<a class="headerlink" href="#allcharacterpsubgroups" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">AllCharacterPSubgroups(G,</span> <span class="pre">chi)</span></code> devuelve una lista de todos los subgrupos <span class="math notranslate nohighlight">\(p\)</span> de <code class="docutils literal notranslate"><span class="pre">G</span></code> que son subgrupos <code class="docutils literal notranslate"><span class="pre">chi</span></code>. Los subgrupos se eligen hasta la conjugación en <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</div>
+<div class="section" id="allcharacterstandardsubgroups">
+<span id="id8"></span><h3><span class="section-number">2.4.4. </span>AllCharacterStandardSubgroups<a class="headerlink" href="#allcharacterstandardsubgroups" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">AllCharacterStandardSubgroups(</span> <span class="pre">G,</span> <span class="pre">chi</span> <span class="pre">)</span></code> devuelve una lista que contiene subgrupos bien descritos de <code class="docutils literal notranslate"><span class="pre">G</span></code> que son subgrupos <code class="docutils literal notranslate"><span class="pre">chi</span></code>. Esta lista puede contener subgrupos de Sylow y sus subgrupos derivados, normalizadores y centralizadores en <code class="docutils literal notranslate"><span class="pre">G</span></code>.</p>
+</div>
+<div class="section" id="allcharactersubgroups">
+<span id="id9"></span><h3><span class="section-number">2.4.5. </span>AllCharacterSubgroups<a class="headerlink" href="#allcharactersubgroups" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">AllCharacterSubgroups(</span> <span class="pre">G,</span> <span class="pre">chi</span> <span class="pre">)</span></code> devuelve una lista de todos los subgrupos <code class="docutils literal notranslate"><span class="pre">chi</span></code> de <code class="docutils literal notranslate"><span class="pre">G</span></code> entre la red de subgrupos. Esta llamada de función puede resultar bastante cara para grupos más grandes. La llamada es cara, en particular, si aún no se conoce la red de subgrupos del grupo dado.</p>
+</div>
+</div>
+<div class="section" id="equivalent-representation">
+<h2><span class="section-number">2.5. </span>Equivalent Representation<a class="headerlink" href="#equivalent-representation" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="equivalentrepresentation">
+<span id="id10"></span><h3><span class="section-number">2.5.1. </span>EquivalentRepresentation<a class="headerlink" href="#equivalentrepresentation" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <code class="docutils literal notranslate"><span class="pre">EquivalentRepresentation(</span> <span class="pre">rep</span> <span class="pre">)</span></code> calcula una representación equivalente a una representación irreducible rep transformando rep en una nueva base haciendo girar un vector (es decir, obteniendo los otros vectores base como imágenes debajo del primero bajo palabras en los generadores). Si la representación de entrada, <code class="docutils literal notranslate"><span class="pre">rep</span></code>, es reducible, <a class="reference internal" href="#equivalentrepresentation">EquivalentRepresentation</a> no devuelve ningún mapeo. En este caso, consulte la sección 3.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="01-introduccion.html" class="btn btn-neutral float-left" title="1. Introducción" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
